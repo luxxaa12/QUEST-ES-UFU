@@ -13,14 +13,18 @@ int main(){
 	for(i=0;i<10;i++){
 	printf("Digite o numero real: %d:",i+1);
 	scanf("%f",&NR[i]);
+
+		
+	quadrado[10] =NR[i]*NR[i];
+
 	}
-		quadrado[10] =NR[i]*NR[i];
+		
 	
-	/*for(i=0;i<10;i++){
-	printf("\nNR %d: %.1f\n",i+1,NR[i]);
-	}*/
 	for(i=0;i<10;i++){
-	printf("\nExibindo raiz quadrada dos vetores %d %.1f\n",i+1,quadrado[i]);
+	printf("\nNR %d: %.1f\n",i+1,quadrado[i]);
 	}
+	/*for(i=0;i<10;i++){
+	printf("\nExibindo raiz quadrada dos vetores %d %.1f\n",i+1,quadrado[i]);
+	}*/
 	return 0;
 }
